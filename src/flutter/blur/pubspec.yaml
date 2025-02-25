@@ -12,6 +12,7 @@ dependencies:
   flet: 0.26.0
   flutter:
     sdk: flutter
+  flutter_acrylic: ^1.1.4
 
 dev_dependencies:
   flutter_test:
