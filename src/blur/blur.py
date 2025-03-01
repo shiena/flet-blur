@@ -1,10 +1,18 @@
-from enum import Enum
-from typing import Any, Optional
+from enum import auto, Enum
+from typing import Optional
 
-from flet.core.constrained_control import ConstrainedControl
-from flet.core.control import OptionalNumber
+from flet.core.control import Control
 
-class Blur(ConstrainedControl):
+class WindowEffect(Enum):
+    DISABLED = auto()
+    SOLID = auto()
+    TRANSPARENT = auto()
+    AERO = auto()
+    ACRYLIC = auto()
+    MICA = auto()
+    TABBED = auto()
+
+class Blur(Control):
     """
     Blur Control.
     """
@@ -14,44 +22,18 @@ class Blur(ConstrainedControl):
         #
         # Control
         #
-        opacity: OptionalNumber = None,
-        tooltip: Optional[str] = None,
         visible: Optional[bool] = None,
-        data: Any = None,
-        #
-        # ConstrainedControl
-        #
-        left: OptionalNumber = None,
-        top: OptionalNumber = None,
-        right: OptionalNumber = None,
-        bottom: OptionalNumber = None,
-        #
-        # Blur specific
-        #
-        value: Optional[str] = None,
+        disabled: Optional[bool] = None,
     ):
-        ConstrainedControl.__init__(
+        Control.__init__(
             self,
-            tooltip=tooltip,
-            opacity=opacity,
             visible=visible,
-            data=data,
-            left=left,
-            top=top,
-            right=right,
-            bottom=bottom,
+            disabled=disabled,
         )
-
-        self.value = value
 
     def _get_control_name(self):
         return "blur"
 
-    # value
-    @property
-    def value(self):
-        return self._get_attr("value")
-
-    @value.setter
-    def value(self, value):
-        self._set_attr("value", value)
+    async def set_window_effect(self, effect: Optional[WindowEffect] = WindowEffect.DISABLED):
+        arg = effect or WindowEffect.DISABLED
+        await self.invoke_method_async("setWindowEffect", {"effect": arg.name})
