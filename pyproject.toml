@@ -8,7 +8,7 @@ authors = [
     { name = "KOGA Mitsuhiro", email = "shiena.jp@gmail.com" }
 ]
 dependencies = [
-    "flet>=0.27.1",
+    "flet>=0.27.0",
 ]
 
 [project.urls]
@@ -22,11 +22,11 @@ Issues = "https://github.com/shiena/flet-blur/issues"
 
 [tool.uv]
 dev-dependencies = [
-    "flet[all]==0.27.1",
+    "flet[all]>=0.27.4",
 ]
 
 [tool.poetry.group.dev.dependencies]
-flet = {extras = ["all"], version = "0.27.1"}
+flet = {extras = ["all"], version = "0.27.4"}
 
 [tool.setuptools]
 license-files = []
