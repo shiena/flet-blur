@@ -36,7 +36,9 @@ class BlurControl extends StatelessWidget {
         switch (methodName) {
           case "setWindowEffect":
             var effect = toWindowEffect(args["effect"] ?? "");
-            await Window.setEffect(effect: effect);
+			var bgColor = control.attrColor("blurBgcolor", context) ?? Colors.transparent;
+			var dark = (args["dark"] ?? "true").toLowerCase() == "true";
+            await Window.setEffect(effect: effect, color: bgColor, dark: dark);
             break;
         }
         return null;
