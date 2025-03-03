@@ -1,8 +1,8 @@
 name: blur
 description: Flet Blur control
-repository: https://github.com/MyGithubAccount/blur/src/flutter/blur
+repository: https://github.com/shiena/flet-blur/src/flutter/blur
 version: 0.1.0
-homepage: https://github.com/MyGithubAccount/blur
+homepage: https://github.com/shiena/flet-blur
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
