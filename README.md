@@ -4,7 +4,27 @@ Blur control for Flet integrating [flutter_acrylic](https://pub.dev/packages/flu
 ## Installation
 
 ```bash
-pip install git@https://github.com/shiena/flet-blur.git
+pip install git+https://github.com/shiena/flet-blur.git
+```
+
+Build the library before running the script.
+
+for windows user:
+
+```bash
+flet build windows -v
+```
+
+for macOS user:
+
+```bash
+flet build macos -v
+```
+
+for linux user:
+
+```bash
+flet build linux -v
 ```
 
 ## Example
