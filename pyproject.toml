@@ -1,5 +1,5 @@
 [project]
-name = "blur"
+name = "flet-blur"
 version = "0.1.0"
 description = "Blur control for Flet"
 readme = "README.md"
@@ -7,12 +7,15 @@ requires-python = ">=3.9"
 authors = [
     { name = "KOGA Mitsuhiro", email = "shiena.jp@gmail.com" }
 ]
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+]
 dependencies = [
     "flet>=0.27.0",
 ]
 
 [project.urls]
-Homepage = "https://github.com/shiena"
+Homepage = "https://github.com/shiena/flet-blur"
 Documentation = "https://github.com/shiena/flet-blur"
 Repository = "https://github.com/shiena/flet-blur"
 Issues = "https://github.com/shiena/flet-blur/issues"
@@ -22,7 +25,7 @@ Issues = "https://github.com/shiena/flet-blur/issues"
 
 [tool.uv]
 dev-dependencies = [
-    "flet[all]>=0.27.4",
+    "flet[all]>=0.27.5",
 ]
 
 [tool.poetry.group.dev.dependencies]
