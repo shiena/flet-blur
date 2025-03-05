@@ -1,6 +1,6 @@
 import flet as ft
 
-import blur as ftb
+import flet_blur as ftb
 
 
 def main(page: ft.Page):

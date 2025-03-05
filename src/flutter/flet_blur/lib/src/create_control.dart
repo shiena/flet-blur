@@ -1,10 +1,10 @@
 import 'package:flet/flet.dart';
 
-import 'blur.dart';
+import 'flet_blur.dart';
 
 CreateControlFactory createControl = (CreateControlArgs args) {
   switch (args.control.type) {
-    case "blur":
+    case "flet_blur":
       return BlurControl(
         parent: args.parent,
         control: args.control,

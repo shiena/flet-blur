@@ -1,7 +1,7 @@
-name: blur
+name: flet_blur
 description: Flet Blur control
-repository: https://github.com/shiena/flet-blur/src/flutter/blur
-version: 0.1.0
+repository: https://github.com/shiena/flet-blur/src/flutter/flet_blur
+version: 0.2.0
 homepage: https://github.com/shiena/flet-blur
 
 environment:
@@ -9,7 +9,7 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  flet: 0.26.0
+  flet: 0.27.0
   flutter:
     sdk: flutter
   flutter_acrylic: ^1.1.4

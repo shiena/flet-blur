@@ -4,7 +4,7 @@ Blur control for Flet integrating [flutter_acrylic](https://pub.dev/packages/flu
 ## Installation
 
 ```bash
-pip install git+https://github.com/shiena/flet-blur.git
+pip install flet-blur
 ```
 
 Build the library before running the script.
@@ -32,7 +32,7 @@ flet build linux -v
 ```py
 import flet as ft
 
-import blur as ftb
+import flet_blur as ftb
 
 
 def main(page: ft.Page):

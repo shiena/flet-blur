@@ -36,7 +36,7 @@ class Blur(Control):
         )
 
     def _get_control_name(self):
-        return "blur"
+        return "flet_blur"
 
     async def set_window_effect(
         self,
