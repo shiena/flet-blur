@@ -1,5 +1,5 @@
 # Flet Blur control
-Blur control for Flet integrating [flutter_acrylic](https://pub.dev/packages/flutter_acrylic)
+Blur control for [Flet](https://flet.dev/) integrating [flutter_acrylic](https://pub.dev/packages/flutter_acrylic)
 
 ## Installation
 
