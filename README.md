@@ -7,7 +7,7 @@ Blur control for [Flet](https://flet.dev/) integrating [flutter_acrylic](https:/
 pip install flet-blur
 ```
 
-Build the library before running the script.
+Please build once before running.
 
 for windows user:
 
